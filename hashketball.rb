@@ -117,12 +117,6 @@ def game_hash
   }
 end
 
-def team_names
-  teams.map do |team|
-    team[:team_name]
-  end
-end
-
 def num_points_scored(player_n)
   game_hash.each do |home_away, keys|
     keys[:players].each do |player|
